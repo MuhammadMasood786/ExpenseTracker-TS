@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bordering {
+  box-shadow: 2px 4px 5px grey;
+  border-radius: 20px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headingStyle {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bolder;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+.headingStyle1 {
+  margin-top: 10px;
+  font-family: "Rowdies", cursive;
+  font-size: 24px;
 }
-
-.App-link {
-  color: #61dafb;
+.headingStyle2 {
+  font-size: 18px;
+  
+  color: #76FF03;
+  font-family: "Rowdies", cursive;
+  
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-trash{
+    font-size: 18px !important;
+    color: black !important;
+}
+.fa-trash:hover{
+    font-size: 22px !important;
+    color: red !important;
+}
+.translist{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn-outline-secondary{
+    width: 100% !important;
+    position: relative;
+    bottom: 10px;
 }
