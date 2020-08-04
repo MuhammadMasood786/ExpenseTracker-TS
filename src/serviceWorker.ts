@@ -1,14 +1,14 @@
-// This optional code is used to register a service worker.
-// register() is not called by default.
+// // This optional code is used to register a service worker.
+// // register() is not called by default.
 
-// This lets the app load faster on subsequent visits in production, and gives
-// it offline capabilities. However, it also means that developers (and users)
-// will only see deployed updates on subsequent visits to a page, after all the
-// existing tabs open on the page have been closed, since previously cached
-// resources are updated in the background.
+// // This lets the app load faster on subsequent visits in production, and gives
+// // it offline capabilities. However, it also means that developers (and users)
+// // will only see deployed updates on subsequent visits to a page, after all the
+// // existing tabs open on the page have been closed, since previously cached
+// // resources are updated in the background.
 
-// To learn more about the benefits of this model and instructions on how to
-// opt-in, read https://bit.ly/CRA-PWA
+// // To learn more about the benefits of this model and instructions on how to
+// // opt-in, read https://bit.ly/CRA-PWA
 
 const isLocalhost = Boolean(
   window.location.hostname === "localhost" ||
@@ -145,28 +145,4 @@ export function unregister() {
   }
 }
 
-var cacheName = "demo-app";
-var filesToCache = ["/", "/App.tsx", "/App.css", "/public/index.html"];
 
-window.self.addEventListener("activate", function (e) {
-  console.log("[ServiceWorker] Activate");
-});
-
-window.self.addEventListener("install", function (e) {
-  console.log("[ServiceWorker] Install");
-  e.waitUntil(
-    caches.open(cacheName).then(function (cache) {
-      console.log("[ServiceWorker] Caching app shell");
-      return cache.addAll(filesToCache);
-    })
-  );
-});
-
-window.self.addEventListener("fetch", function (e) {
-  console.log("[ServiceWorker] Fetch", e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function (response) {
-      return response || fetch(e.request);
-    })
-  );
-});
