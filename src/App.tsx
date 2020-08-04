@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="">
       <div className="row">
-        <div className="col-md-10 col-sm-12 mx-auto">
+        <div className="col-md-10 col-12 mx-auto">
           <div className="row mt-3">
             <div className="col-md-4 col-12 mx-auto bordering">
               <ContextProvider>
