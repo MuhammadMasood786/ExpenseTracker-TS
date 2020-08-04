@@ -14,7 +14,7 @@ const Balance: React.FC = () => {
     return (
         <div className="">
             <div className="row">
-                <h1 className="headingStyle text-dark mx-auto">Expense Tracker</h1>
+                <h1 className="headingStyle text-dark mx-auto">Expense Tracker's</h1>
             </div>
             <div className="row">
                 <h3 className="headingStyle ml-2 text-secondary">Balance</h3>
