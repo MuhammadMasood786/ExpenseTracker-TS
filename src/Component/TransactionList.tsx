@@ -17,8 +17,8 @@ const TransactionList: React.FC = () => {
                 {transactionList.Transaction.map((transList: TransactionType, ind: number) => {
                     return (
                         <div className="row" key={ind}>
-                            <h6 className="translist col-md-6">{transList.text}</h6> 
-                            <h6 className="translist col-md-4">{transList.amount}$</h6>
+                            <h6 className="translist col-md-6 col-12">{transList.text}</h6> 
+                            <h6 className="translist col-md-4 col-12">{transList.amount}$</h6>
                             <h6 className="col-md-2"> <i className="fa fa-trash" aria-hidden="true" onClick={()=> DeleteTransaction(transList.id)}></i></h6>
                         </div>
                     );

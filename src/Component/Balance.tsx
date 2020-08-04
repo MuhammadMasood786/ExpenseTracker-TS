@@ -14,26 +14,26 @@ const Balance: React.FC = () => {
     return (
         <div className="">
             <div className="row">
-                <h1 className="headingStyle text-dark mx-auto">Expense Tracker's</h1>
+                <h1 className="headingStyle text-dark mx-auto col-12">Expense Tracker</h1>
             </div>
             <div className="row">
-                <h3 className="headingStyle ml-2 text-secondary">Balance</h3>
+                <h3 className="headingStyle ml-2 text-secondary col-12">Balance</h3>
             </div>
             <div className="row justify-content-center">
     <h1 className="headingStyle ml-2 text-warning">${income + expense}</h1>
             </div>
             <div className="row">
-                <h4 className="headingStyle text-secondary ml-2"> Account</h4>
+                <h4 className="headingStyle text-secondary ml-2 col-12"> Account</h4>
             </div>
             <div className="row">
-                <h4 className="headingStyle text-success col-md-4">Income</h4>
+                <h4 className="headingStyle text-success col-md-4 col-12">Income</h4>
                 <h3 className="col-md-4"> </h3>
-                <h4 className="headingStyle text-success col-md-4">{income}$</h4>
+                <h4 className="headingStyle text-success col-md-4 col-12">{income}$</h4>
             </div>
             <div className="row">
-                <h4 className="headingStyle text-danger col-md-4">Expense</h4>
-                <h3 className="col-md-4"> </h3>
-                <h4 className="headingStyle text-danger col-md-4">{expense}$</h4>
+                <h4 className="headingStyle text-danger col-md-4 col-12">Expense</h4>
+                <h3 className="col-md-4 col-12"> </h3>
+                <h4 className="headingStyle text-danger col-md-4 col-12">{expense}$</h4>
             </div>
             <hr className="text-primary" />
         </div>
