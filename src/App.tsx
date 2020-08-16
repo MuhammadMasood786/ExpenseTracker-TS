@@ -8,19 +8,6 @@ import AddTransaction from './Component/AddTransaction';
 
 function App() {
 
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("serviceWorker.ts") // service worker file location
-      .then(function() {
-        console.log("Service Worker Registered Successfully");
-      })
-      .catch(function(error) {
-        console.error("Something goes wrong while registering service worker");
-        console.log(error);
-      });
-  } else {
-    console.log("Service Worker is not available");
-  }
 
   return (
     <div className="">
