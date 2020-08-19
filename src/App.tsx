@@ -8,7 +8,6 @@ import AddTransaction from './Component/AddTransaction';
 
 function App() {
 
-
   return (
     <div className="">
       <div className="row">
