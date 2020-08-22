@@ -9,7 +9,7 @@ import AddTransaction from './Component/AddTransaction';
 function App() {
 
   return (
-    <div className="">
+    <div className="container">
       <div className="row">
         <div className="col-md-10 col-12 mx-auto">
           <div className="row mt-3">
