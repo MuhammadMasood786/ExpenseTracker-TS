@@ -43,7 +43,10 @@ const assets = [
     
     '/',
     '/index.html',
-    
+    'static/js/0.chunk.js',
+    'static/js/bundle.js',
+    '/static/js/main.chunk.js',
+    '/favicon.ico'
 ];
 
 
